@@ -7,13 +7,14 @@ const App = () => {
 
   return (
     <div id="main">
-      <ChildComponent /> 
+      <ChildComponent input={
        <input id='input' onChange={(e)=>{
    let ans = e.target.value;
    ans = Math.pow(ans, 2);
    SetInp1(ans)
    
-  }} />
+  }} />}
+ /> 
     
       <p id='output'>{input1}</p>
     </div>
